@@ -84,7 +84,7 @@ class MultiCrops extends Component {
 
   render() {
     const {
-      src, width, height, onLoad,
+      src, width, height, onLoad, canvas
     } = this.props
     // const { clicked } = this.state
     return (
@@ -107,6 +107,7 @@ class MultiCrops extends Component {
           alt=""
           draggable={false}
         />
+        {this.canvas}
         {this.renderCrops(this.props)}
 
       </div>
